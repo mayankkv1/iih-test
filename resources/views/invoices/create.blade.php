@@ -34,7 +34,7 @@
             <br/><br/>
 
             <div id="prdList">
-                <lable>Products</label> <button type="button" id="addPrd">Add</button> <br/><br/>
+                <label>Products</label> <button type="button" id="addPrd">Add</button> <br/><br/>
                 <div class="prd">
                     <div class="form-group"> 
                         <label>Product Name</label>
