@@ -59,3 +59,14 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Setup Steps
+1. Download and Install xampp through https://www.apachefriends.org/
+2. Download and Install composer application through https://getcomposer.org/
+3. Install laravel installer using command - composer global require laravel/installer
+4. Install new laravel project using command - laravel new iih-test
+5. Open phpmyadmin and create a database names iih_test
+6. Run command to create the tables - php artisan migrate
+7. Start the application by running command - php artisan serve
+8. Open a browser and open the invoices application on localhost:8000/invoices
