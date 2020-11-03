@@ -1,0 +1,14 @@
+.form-group{
+    display: inline-block;
+}
+.form-group label{
+    display: block;
+}
+.has-error{
+    border: 1px solid red;
+    color: red;
+    padding: 10px;            
+}
+.error-msg{
+    display: block;
+}
