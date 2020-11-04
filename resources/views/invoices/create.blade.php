@@ -12,6 +12,11 @@
         .prd{
             margin-bottom: 10px;
         }
+        .all_prd{
+            display: inline-block;
+            border: 1px solid black;
+            padding: 10px;
+        }
     </style>
 
 </head>
@@ -35,22 +40,24 @@
 
             <div id="prdList">
                 <label>Products</label> <button type="button" id="addPrd">Add</button> <br/><br/>
-                <div class="prd">
-                    <div class="form-group"> 
-                        <label>Product Name</label>
-                        <input type="text" class="form-control" name="product_name[]" placeholder="Product Name" required/>
-                    </div>
+                <div class="all_prd">                
+                    <div class="prd">
+                        <div class="form-group"> 
+                            <label>Product Name</label>
+                            <input type="text" class="form-control" name="product_name[]" placeholder="Product Name" required/>
+                        </div>
 
-                    <div class="form-group"> 
-                        <label>Priduct Price</label>
-                        <input type="number" class="form-control" step="0.01" name="product_price[]" placeholder="Priduct Price" required/>
-                    </div>
+                        <div class="form-group"> 
+                            <label>Priduct Price</label>
+                            <input type="number" class="form-control" step="0.01" name="product_price[]" placeholder="Priduct Price" required/>
+                        </div>
 
-                    <div class="form-group"> 
-                        <label>Discount</label>
-                        <input type="number" class="form-control" name="discount[]" placeholder="Discount" required/>
+                        <div class="form-group"> 
+                            <label>Discount</label>
+                            <input type="number" class="form-control" name="discount[]" placeholder="Discount" max="100" required/>
+                        </div>
                     </div>
-                </div>
+                 </div>
 
             </div><br/>
             {{csrf_field()}}
@@ -94,7 +101,7 @@
     });
 
     $('#addPrd').click(function(){
-        $('#prdList').append(`<div class="prd">
+        $('.all_prd').append(`<div class="prd">
                     <div class="form-group"> 
                         <label>Product Name</label>
                         <input type="text" class="form-control" name="product_name[]" placeholder="Product Name" required/>

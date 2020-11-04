@@ -41,7 +41,7 @@
 
             <div class="form-group"> 
                 <label>Discount</label>
-                <input type="number" class="form-control" name="discount" placeholder="Discount" value="{{$invoice->discount}}" required/>
+                <input type="number" class="form-control" name="discount" placeholder="Discount" value="{{$invoice->discount}}" max="100" required/>
             </div>
             {{csrf_field()}}
             <button type="submit">Update Product</button>
