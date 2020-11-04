@@ -114,7 +114,7 @@
 
                     <div class="form-group"> 
                         <label>Discount</label>
-                        <input type="number" class="form-control" name="discount[]" placeholder="Discount" required/>
+                        <input type="number" class="form-control" name="discount[]" placeholder="Discount" max="100" required/>
                     </div>
 
                     <button type="button" class="removePrd">Remove</button>
